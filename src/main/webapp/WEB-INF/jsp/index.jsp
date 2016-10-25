@@ -11,6 +11,7 @@
 <p>
   <security:authorize access="anonymous">
     <a href="<c:url value='/login.html' />">Login</a>
+    <a href="<c:url value='/register.html'/>">Sign Up</a>
   </security:authorize>
   <security:authorize access="authenticated">
     <security:authorize access="hasAnyRole('ADMIN','ADVISOR')">
